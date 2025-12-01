@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доступ к Анализу</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-400 to-indigo-600 shadow-2xl transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        
+        <div class="relative px-4 py-10 bg-white shadow-xl sm:rounded-3xl sm:p-20 border border-gray-300">
+            <div class="max-w-md mx-auto">
+                <div class="text-center mb-8">
+                    <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+                        ДОСТУП К АНАЛИЗУ
+                    </h1>
+                </div>
+                
+                <form action="[JŪSŲ FORMSPREE / NETLIFY NUORODA]" method="POST" class="space-y-6"
+                    data-netlify="true" 
+                    name="analizes-forma-framed"
+                    data-netlify-success="/aciu-uz-registracija"
+                >
+                    
+                    <div class="space-y-6">
+
+                        <div>
+                            <input type="email" id="email" name="email" required placeholder="Ваш E-mail адрес" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500"
+                            >
+                        </div>
+
+                        <div class="flex items-start pt-2">
+                            <input id="consent" name="mailing_list_consent" type="checkbox" required value="yes"
+                                   class="h-4 w-4 text-indigo-600 border-gray-300 rounded mt-1"
+                            >
+                            <label for="consent" class="ml-2 text-sm text-gray-700">
+                                Соглашаюсь получать обновления.
+                            </label>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" 
+                                    class="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 shadow-md">
+                                СКАЧАТЬ АНАЛИЗ СЕЙЧАС
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
