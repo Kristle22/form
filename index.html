@@ -5,75 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заказ персонализированного материала</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/dqcbfslcm/image/upload/v1764576167/free-icon-form-8898774_uzmdq2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/dqcbfslcm/image/upload/v1764576167/free-icon-form-8898774_uzmdq2.png">
 </head>
-<body class="antialiased text-gray-800">
-</head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body class="bg-gradient-to-b from-indigo-50 to-white flex items-center justify-center min-h-screen p-4">
 
-    <div class="relative py-3 sm:max-w-md sm:mx-auto">
-        <div class="relative px-4 py-10 bg-white shadow-xl sm:rounded-3xl sm:p-12 border border-gray-300">
-            <div class="max-w-md mx-auto">
-                <div class="text-center mb-6">
-                    <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight">
-                        Заказ персонализированного материала
-                    </h1>
-                </div>
-                
-                <form action="https://formspree.io/f/mldqjqby" method="POST" class="space-y-4">
-
-                    <!-- НАЗВАНИЕ ЗАВЕДЕНИЯ -->
-                    <div>
-                        <label for="project_name" class="block text-sm font-medium text-gray-700 mb-1">
-                            Название заведения
-                        </label>
-                        <input type="text" id="project_name" name="project_name" required
-                               placeholder=""
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500">
-                    </div>
-
-                    <!-- ТИП ЗАВЕДЕНИЯ -->
-                    <div>
-                        <label for="project_type" class="block text-sm font-medium text-gray-700 mb-1">
-                            Тип заведения
-                        </label>
-                        <input type="text" id="project_type" name="project_type" required
-                               placeholder="Кафе, ресторан, бар…"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500">
-                    </div>
-
-                    <!-- КОНЦЕПЦИЯ -->
-                    <div>
-                        <label for="concept" class="block text-sm font-medium text-gray-700 mb-1">
-                            Концепция
-                        </label>
-                        <textarea id="concept" name="concept" rows="4" required
-                                  placeholder="Коротко о концепции: атмосфера, клиенты, главная идея"
-                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
-                    </div>
-
-                    <!-- EMAIL -->
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                            Email
-                        </label>
-                        <input type="email" id="email" name="email" required
-                               placeholder="Ваш Email"
-                               class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500">
-                    </div>
-
-                    <!-- BUTTON -->
-                    <div>
-                        <button type="submit"
-                                class="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 shadow-md text-base">
-                            ЗАКАЗАТЬ
-                        </button>
-                    </div>
-
-                </form>
+<div class="relative py-3 sm:max-w-md sm:mx-auto w-full">
+    <div class="relative px-6 py-10 bg-white shadow-2xl sm:rounded-3xl border border-gray-200">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-6">
+                <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+                    Заказ персонализированного материала
+                </h1>
+                <p class="mt-2 text-gray-500 text-sm">Создай свои уникальные визуалы и видео для заведения</p>
             </div>
+            
+            <form action="https://formspree.io/f/mldqjqby" method="POST" class="space-y-4">
+
+                <!-- НАЗВАНИЕ ЗАВЕДЕНИЯ -->
+                <div>
+                    <label for="project_name" class="block text-sm font-medium text-gray-700 mb-1">
+                        Название заведения
+                    </label>
+                    <input type="text" id="project_name" name="project_name" required
+                           placeholder="Например: Кофейня Aroma"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+
+                <!-- ТИП ЗАВЕДЕНИЯ -->
+                <div>
+                    <label for="project_type" class="block text-sm font-medium text-gray-700 mb-1">
+                        Тип заведения
+                    </label>
+                    <input type="text" id="project_type" name="project_type" required
+                           placeholder="Кафе, ресторан, бар…"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+
+                <!-- КОНЦЕПЦИЯ -->
+                <div>
+                    <label for="concept" class="block text-sm font-medium text-gray-700 mb-1">
+                        Концепция
+                    </label>
+                    <textarea id="concept" name="concept" rows="4" required
+                              placeholder="Опиши атмосферу, целевую аудиторию и общую идею заведения"
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                </div>
+
+                <!-- КЛЮЧЕВЫЕ БЛЮДА / НАПИТКИ -->
+                <div>
+                    <label for="dishes" class="block text-sm font-medium text-gray-700 mb-1">
+                        Ключевые блюда / напитки
+                    </label>
+                    <textarea id="dishes" name="dishes" rows="3" required
+                              placeholder="Укажи 3 главных блюда или напитка для визуалов"
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                </div>
+
+                <!-- EMAIL -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                        Email
+                    </label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="Ваш Email"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                </div>
+
+                <!-- BUTTON -->
+                <div>
+                    <button type="submit"
+                            class="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 shadow-lg text-base transition-all duration-300 transform hover:-translate-y-1">
+                        Получить персональные визуалы
+                    </button>
+                </div>
+
+            </form>
         </div>
     </div>
+</div>
 
 </body>
 </html>
