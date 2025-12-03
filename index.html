@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,17 +10,17 @@
 </head>
 <body class="bg-gradient-to-b from-indigo-50 to-white flex items-center justify-center min-h-screen p-4">
 
-<div class="relative py-3 sm:max-w-md sm:mx-auto w-full">
-    <div class="relative px-6 py-10 bg-white shadow-2xl sm:rounded-3xl border border-gray-200">
-        <div class="max-w-md mx-auto">
+<div class="relative py-3 w-full sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
+    <div class="relative px-8 py-10 bg-white shadow-2xl sm:rounded-3xl border border-gray-200">
+        <div class="max-w-3xl mx-auto">
             <div class="text-center mb-6">
-                <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
                     Заказ персонализированного материала
                 </h1>
-                <p class="mt-2 text-gray-500 text-sm">Создай свои уникальные визуалы и видео для заведения</p>
+                <p class="mt-2 text-gray-500 text-sm md:text-base">Создай свои уникальные визуалы и видео</p>
             </div>
             
-            <form action="https://formspree.io/f/mldqjqby" method="POST" class="space-y-4">
+            <form action="https://formspree.io/f/mldqjqby" method="POST" class="space-y-5">
 
                 <!-- НАЗВАНИЕ ЗАВЕДЕНИЯ -->
                 <div>
@@ -28,7 +29,7 @@
                     </label>
                     <input type="text" id="project_name" name="project_name" required
                            placeholder="Например: Кофейня Aroma"
-                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                           class="w-full px-5 py-4 border border-gray-300 rounded-xl text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200">
                 </div>
 
                 <!-- ТИП ЗАВЕДЕНИЯ -->
@@ -38,7 +39,7 @@
                     </label>
                     <input type="text" id="project_type" name="project_type" required
                            placeholder="Кафе, ресторан, бар…"
-                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                           class="w-full px-5 py-4 border border-gray-300 rounded-xl text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200">
                 </div>
 
                 <!-- КОНЦЕПЦИЯ -->
@@ -48,7 +49,7 @@
                     </label>
                     <textarea id="concept" name="concept" rows="4" required
                               placeholder="Опиши атмосферу, целевую аудиторию и общую идею заведения"
-                              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                              class="w-full px-5 py-4 border border-gray-300 rounded-xl text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200 resize-none"></textarea>
                 </div>
 
                 <!-- КЛЮЧЕВЫЕ БЛЮДА / НАПИТКИ -->
@@ -58,7 +59,7 @@
                     </label>
                     <textarea id="dishes" name="dishes" rows="3" required
                               placeholder="Укажи 3 главных блюда или напитка для визуалов"
-                              class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                              class="w-full px-5 py-4 border border-gray-300 rounded-xl text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200 resize-none"></textarea>
                 </div>
 
                 <!-- EMAIL -->
@@ -68,13 +69,13 @@
                     </label>
                     <input type="email" id="email" name="email" required
                            placeholder="Ваш Email"
-                           class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
+                           class="w-full px-5 py-4 border border-gray-300 rounded-xl text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200">
                 </div>
 
                 <!-- BUTTON -->
                 <div>
                     <button type="submit"
-                            class="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 shadow-lg text-base transition-all duration-300 transform hover:-translate-y-1">
+                            class="w-full py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg text-base transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
                         Получить персональные визуалы
                     </button>
                 </div>
